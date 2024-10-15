@@ -35,14 +35,16 @@
                     </li>
 
                 </ul>
-                <button class="btn button-login mx-4" data-toggle="tooltip" data-placement="bottom" title="Inicia sesión"
-                    type="button">LOGIN</button>
+                <button class="btn button-login mx-4" data-toggle="tooltip" data-placement="bottom"
+                    title="Inicia sesión" type="button">LOGIN</button>
             </div>
         </div>
     </nav>
 
+    <!-- grid de bootstrap -->
     <div class="container">
-        <div class="row py-5 my-5">
+        <div class="row py-5 my-5 flex-column flex-md-row">
+            <!-- info -->
             <div class="col order-5 order-md-1 ">
                 <div class="info my-5 mx-lg-5 text-center text-md-start ">
                     <h1 class="">A Simple Bookmark Manager</h1>
@@ -56,12 +58,87 @@
 
             </div>
 
-            <div class="col order-1 order-md-5">
-                <img src="src/Imagenes/illustration-hero.svg" alt="illustration-hero">
+            <!-- imagen -->
+            <div class="col order-1 order-md-5 ">
+                <img src="src/Imagenes/illustration-hero.svg" alt="illustration-hero" class="img-fluid">
             </div>
         </div>
+        <section id="features" class="row justify-content-center">
+            <div class="info-features text-center">
+                <h2>Features</h2>
+            <p class="descripcion-features">Our aim is to make it quick and easy for you to access your favourite webstites.Your bookmarks sync between your devices so you can acces on the go.</p>
+            </div>
+            
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs justify-content-center flex-column text-center flex-sm-row" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#content1">Simple Bookmarking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#content2">Speedy Searching</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#content3">Easy Sharing</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="content1" class="container tab-pane active "><br>
+                    <div class="row d-flex align-items-center text-center flex-column flex-md-row">
+                        <div class="col py-4">
+                            <img src="src/Imagenes/illustration-features-tab-1.svg" alt="ilustracion2"
+                                class="img-fluid">
+                        </div>
+                        <div class="col py-4">
+                            <div class="info text-md-start  ">
+                                <h3>Bookmark in one click</h3>
+                                <p>Optimize your bookmark however you like. Our simple drag-and-drop interface gives
+                                    you
+                                    complete control over hoy you manage your favourite webstite.</p>
+                                <button type="button" class="btn btn-primary more-info" >More info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content2" class="container tab-pane fade"><br>
+                    <div class="row d-flex align-items-center text-center flex-column flex-md-row">
+                        <div class="col py-4">
+                            <img src="src/Imagenes/illustration-features-tab-1.svg" alt="ilustracion2"
+                                class="img-fluid">
+                        </div>
+                        <div class="col py-4">
+                            <div class="info text-md-start  ">
+                                <h3>Speedy Searching</h3>
+                                <p>Optimize your bookmark however you like. Our simple drag-and-drop interface gives
+                                    you
+                                    complete control over hoy you manage your favourite webstite.</p>
+                                <button type="button" class="btn btn-primary more-info">More info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content3" class="container tab-pane fade"><br>
+                    <div class="row d-flex align-items-center text-center flex-column flex-md-row">
+                        <div class="col py-4">
+                            <img src="src/Imagenes/illustration-features-tab-1.svg" alt="ilustracion2"
+                                class="img-fluid">
+                        </div>
+                        <div class="col py-4">
+                            <div class="info text-md-start  ">
+                                <h3>Easy Sharing</h3>
+                                <p>Optimize your bookmark however you like. Our simple drag-and-drop interface gives
+                                    you
+                                    complete control over hoy you manage your favourite webstite.</p>
+                                <button type="button" class="btn btn-primary more-info">More info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    
 
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

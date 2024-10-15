@@ -11854,4 +11854,52 @@ textarea.form-control-lg {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
+.info-features {
+  width: 36%;
+  margin-bottom: 3%;
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs .nav-link {
+  color: #333;
+  border: 0px;
+  border-bottom: 1px solid lightgray;
+  background-color: transparent;
+}
+
+.nav-tabs .nav-link.active {
+  color: #000;
+  border-bottom: 3px solid #FA5959;
+}
+
+@media (max-width: 767.98px) {
+  .info-features {
+    width: 100%;
+  }
+  .nav-tabs .nav-link {
+    border-top: 1px solid lightgray;
+  }
+  .nav-tabs .nav-link.active {
+    border-bottom: 1px solid lightgray;
+    position: relative;
+  }
+  /* Línea naranja corta y centrada */
+  .nav-tabs .nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 125px;
+    height: 3px;
+    background-color: #FA5959;
+  }
+  .more-info {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
