@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.2. Bootstrap&SASS</title>
+    <link rel="stylesheet" href="output/style.css">
+</head>
+
+<body class="mx-5">
+    <nav class="navbar navbar-expand-lg py-5">
+        <div class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand" href="#"><img src="src/Imagenes/logo-bookmark.svg" alt="logo" title="logo"></a>
+
+            <!-- boton hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" type="button"
+                title="menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- collapse -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#">FEATURES</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#">PRICING</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+
+                </ul>
+                <button class="btn button-login mx-4" data-toggle="tooltip" data-placement="bottom" title="Inicia sesión"
+                    type="button">LOGIN</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row py-5 my-5">
+            <div class="col order-5 order-md-1 ">
+                <div class="info my-5 mx-lg-5 text-center text-md-start ">
+                    <h1 class="">A Simple Bookmark Manager</h1>
+                    <p>A clean and simple interface to organize your favourite webstite. Open a new browser tab and see
+                        your sites load instantly. Try it for free</p>
+                    <button class="btn btn-primary button-chrome px-3" data-toggle="tooltip" data-placement="bottom"
+                        title="Chrome" type="button">Get it on Chrome</button>
+                    <button class="btn btn-light button-firefox" data-toggle="tooltip" data-placement="right"
+                        title="Firefox" type="button">Get it on Firefox</button>
+                </div>
+
+            </div>
+
+            <div class="col order-1 order-md-5">
+                <img src="src/Imagenes/illustration-hero.svg" alt="illustration-hero">
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
