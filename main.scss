@@ -2,6 +2,8 @@
 $primary: #5265E1 ;
 $secondary: #FA5959; 
 $light: rgb(236, 241, 245);
+$font-primary-color:#333;
+$font-secondary-color:rgb(167, 166, 166);
 
 //variables al tema de bootstrap
 $theme-color:(
@@ -10,48 +12,83 @@ $theme-color:(
     "light": $light,
 );
 
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+
+  //nuevo
+  6: $spacer * 3.5,
+  7:$spacer * 6.5,
+);
+
+//botones
+$btn-font-size: .75rem;
+$btn-padding-x: 1.25rem;
+$btn-padding-y: 0.75rem;
+$btn-font-weight: 500;
+$black:    #000;
+
+//box shadow
+$box-shadow-sm: 0 .125rem .25rem rgba($black, .075);
+
+//headings
+$headings-font-weight:700;
+$font-size-a: .75rem;
+$font-weight-a: 600;
+
+
 @import "node_modules/bootstrap/scss/bootstrap";
 
 
+p{
+    color: $font-secondary-color;
+}
+button{
+    margin: $spacer 0 $spacer*.25 0;
+    border: $box-shadow-sm;
+}
+
+//      hero
 .button-login{
-    background-color: $secondary;
+    margin-top:0px;
     color:white;
 }
 
-.button-firefox{
-    background-color:$light;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-}
 
-
-
-
-//FEATURES
-.info-features{
-    width: 36%;
+//     features
+.info{
+    width: 46%;
     margin-bottom: 3%;
 }
-
-.nav-tabs{
-    border: none;
+.info-contenido-features{
+    width: 95%;
 }
+
 
 // all links
 .nav-tabs .nav-link {
-    color: #333;
+    color: $font-secondary-color;
     border: 0px;
     border-bottom: 1px solid lightgray; 
     background-color: transparent;
 }
+a.link-navbar{
+    font-size: $font-size-a;
+    font-weight: $font-weight-a;
+}
 
 // active link
 .nav-tabs .nav-link.active {
-    color: #000;
     border-bottom: 3px solid $secondary;
 }
 
 @include media-breakpoint-down(md){
-    .info-features{
+    .info{
         width: 100%;
     }
 
@@ -66,7 +103,7 @@ $theme-color:(
         position: relative;
       }
   
-    /* Línea naranja corta y centrada */
+    //linea naranja
     .nav-tabs .nav-link.active::after {
         content: '';
         position: absolute;
@@ -82,4 +119,20 @@ $theme-color:(
     }
 
 
+}
+
+
+//      download
+.row-de-cartas{
+    width: fit-content;
+}
+.card{
+    width: 18rem;
+    border: 0px;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btn-install{
+    width: -webkit-fill-available;
 }
