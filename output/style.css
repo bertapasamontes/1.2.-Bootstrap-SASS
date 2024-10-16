@@ -4589,11 +4589,11 @@ textarea.form-control-lg {
   --bs-accordion-btn-padding-y: 1rem;
   --bs-accordion-btn-color: var(--bs-body-color);
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%235265E1' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='rgb%2832.8, 40.4, 90%29' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FA5959' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
@@ -12677,6 +12677,33 @@ a.link-navbar {
   border-bottom: 3px solid #FA5959;
 }
 
+.row-de-cartas {
+  width: fit-content;
+}
+
+.card {
+  width: 18rem;
+  border: 0px;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btn-install {
+  width: -webkit-fill-available;
+}
+
+.accordion-flush > .accordion-item:first-child {
+  border-top: 1px solid #dee2e6;
+}
+
+.accordion-flush > .accordion-item:last-child {
+  border-bottom: 1px solid #dee2e6;
+}
+
+button.accordion-button {
+  margin: 0px;
+}
+
 @media (max-width: 767.98px) {
   .info {
     width: 100%;
@@ -12701,20 +12728,6 @@ a.link-navbar {
   .more-info {
     display: none;
   }
-}
-.row-de-cartas {
-  width: fit-content;
-}
-
-.card {
-  width: 18rem;
-  border: 0px;
-  border-radius: 15px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.btn-install {
-  width: -webkit-fill-available;
 }
 
 /*# sourceMappingURL=style.css.map */

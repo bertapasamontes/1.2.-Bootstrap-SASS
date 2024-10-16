@@ -41,6 +41,11 @@ $headings-font-weight:700;
 $font-size-a: .75rem;
 $font-weight-a: 600;
 
+//acordion
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $secondary;
+$border-color:#dee2e6;
+
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
@@ -87,6 +92,33 @@ a.link-navbar{
     border-bottom: 3px solid $secondary;
 }
 
+
+//      download
+.row-de-cartas{
+    width: fit-content;
+}
+.card{
+    width: 18rem;
+    border: 0px;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btn-install{
+    width: -webkit-fill-available;
+}
+
+//      faqs
+.accordion-flush > .accordion-item:first-child {
+    border-top: 1px solid $border-color;
+}
+.accordion-flush > .accordion-item:last-child{
+    border-bottom: 1px solid $border-color;
+}
+button.accordion-button{
+    margin: 0px;
+}
+
 @include media-breakpoint-down(md){
     .info{
         width: 100%;
@@ -101,8 +133,8 @@ a.link-navbar{
         
         border-bottom: 1px solid lightgray; 
         position: relative;
-      }
-  
+        }
+    
     //linea naranja
     .nav-tabs .nav-link.active::after {
         content: '';
@@ -119,20 +151,4 @@ a.link-navbar{
     }
 
 
-}
-
-
-//      download
-.row-de-cartas{
-    width: fit-content;
-}
-.card{
-    width: 18rem;
-    border: 0px;
-    border-radius: 15px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.btn-install{
-    width: -webkit-fill-available;
 }
