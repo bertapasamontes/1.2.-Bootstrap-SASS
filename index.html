@@ -8,300 +8,422 @@
     <link rel="stylesheet" href="output/style.css">
 </head>
 
-<body class="mx-5">
-    <nav class="navbar navbar-expand-lg py-5 mx-sm-4 px-sm-4">
-        <div class="container-fluid me-sm-4 pe-sm-4">
-            <!-- logo -->
-            <a class="navbar-brand" href="#"><img src="src/Imagenes/logo-bookmark.svg" alt="logo" title="logo"></a>
+<body class="">
+    <div class="mx-4">
+        <nav class="navbar navbar-expand-lg py-5 mx-sm-4 px-sm-4">
+            <div class="container-fluid mx-sm-6 px-sm-4">
+                <!-- logo -->
+                <a class="navbar-brand" href="#"><img src="src/Imagenes/logo-bookmark.svg" alt="logo" title="logo"></a>
 
-            <!-- boton hamburguesa -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" type="button"
-                title="menú">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <!-- boton hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation" type="button" title="menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <!-- collapse -->
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item mx-4">
-                        <a class="link-navbar nav-link" href="#">FEATURES</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                        <a class="link-navbar nav-link" href="#">PRICING</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                        <a class="link-navbar nav-link" href="#">CONTACT</a>
-                    </li>
+                <!-- collapse -->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-4">
+                            <a class="link-navbar nav-link" href="#">FEATURES</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="link-navbar nav-link" href="#">PRICING</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="link-navbar nav-link" href="#">CONTACT</a>
+                        </li>
 
+                    </ul>
+                    <button class="btn btn-secondary button-secondary" data-toggle="tooltip" data-placement="bottom"
+                        title="Inicia sesión" type="button">LOGIN</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- grid de bootstrap -->
+        <div class="container">
+
+            <!-- hero -->
+            <div class="row py-5 my-5 flex-column flex-md-row">
+                <!-- info -->
+                <div class="col order-5 order-md-1 ">
+                    <div class="my-5 mx-lg-5 text-center text-md-start ">
+                        <h1 class="">A Simple Bookmark Manager</h1>
+                        <p>A clean and simple interface to organize your favourite webstite. Open a new browser tab and
+                            see
+                            your sites load instantly. Try it for free</p>
+                        <button class="btn btn-primary button-chrome" data-toggle="tooltip" data-placement="bottom"
+                            title="Chrome" type="button">Get it on Chrome</button>
+                        <button class="btn btn-light" data-toggle="tooltip" data-placement="right" title="Firefox"
+                            type="button">Get it on Firefox</button>
+                    </div>
+
+                </div>
+
+                <!-- imagen -->
+                <div class="col order-1 order-md-5 position-relative">
+                    <div class="azulito img-fluid">&emsp;</div>
+                    <img src="src/Imagenes/illustration-hero.svg" alt="illustration-hero" class="img-fluid">
+
+                </div>
+            </div>
+
+            <!-- features -->
+            <section id="features" class="row justify-content-center pb-7 mb-7">
+                <div class="info text-center">
+                    <h2>Features</h2>
+                    <p class="descripcion-features">Our aim is to make it quick and easy for you to access your
+                        favourite
+                        webstites.Your bookmarks sync between your devices so you can acces on the go.</p>
+                </div>
+
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs justify-content-center flex-column text-center flex-sm-row border-0 mb-4"
+                    role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active pb-3" data-bs-toggle="tab" href="#content1">Simple Bookmarking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pb-3" data-bs-toggle="tab" href="#content2">Speedy Searching</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pb-3" data-bs-toggle="tab" href="#content3">Easy Sharing</a>
+                    </li>
                 </ul>
-                <button class="btn btn-secondary button-login mx-4 px-4" data-toggle="tooltip" data-placement="bottom"
-                    title="Inicia sesión" type="button">LOGIN</button>
-            </div>
-        </div>
-    </nav>
 
-    <!-- grid de bootstrap -->
-    <div class="container">
-
-        <!-- hero -->
-        <div class="row py-5 my-5 flex-column flex-md-row">
-            <!-- info -->
-            <div class="col order-5 order-md-1 ">
-                <div class="my-5 mx-lg-5 text-center text-md-start ">
-                    <h1 class="">A Simple Bookmark Manager</h1>
-                    <p>A clean and simple interface to organize your favourite webstite. Open a new browser tab and see
-                        your sites load instantly. Try it for free</p>
-                    <button class="btn btn-primary button-chrome px-3" data-toggle="tooltip" data-placement="bottom"
-                        title="Chrome" type="button">Get it on Chrome</button>
-                    <button class="btn btn-light" data-toggle="tooltip" data-placement="right" title="Firefox"
-                        type="button">Get it on Firefox</button>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="content1" class="container tab-pane active "><br>
+                        <div class="row d-flex align-items-center text-center flex-column flex-md-row">
+                            <div class="col py-4 position-relative">
+                                <div class="azulito_2 img-fluid">&emsp;</div>
+                                <img src="src/Imagenes/illustration-features-tab-1.svg" alt="ilustracion2"
+                                    class="img-fluid">
+                            </div>
+                            <div class="col py-4 ps-0 ps-md-7">
+                                <div class="info-contenido-features text-md-start  ">
+                                    <h3>Bookmark in one click</h3>
+                                    <p>Optimize your bookmark however you like. Our simple drag-and-drop interface gives
+                                        you
+                                        complete control over hoy you manage your favourite sites.</p>
+                                    <button type="button" class="btn btn-primary more-info">More info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content2" class="container tab-pane fade"><br>
+                        <div class="row d-flex align-items-center text-center flex-column flex-md-row">
+                            <div class="col py-4 ps-0 ps-md-5">
+                                <img src="src/Imagenes/illustration-features-tab-1.svg" alt="ilustracion2"
+                                    class="img-fluid">
+                            </div>
+                            <div class="col py-4">
+                                <div class="info-contenido-features text-md-start ps-md-7">
+                                    <h3>Speedy Searching</h3>
+                                    <p>Optimize your bookmark however you like. Our simple drag-and-drop interface gives
+                                        you
+                                        complete control over hoy you manage your favourite sites.</p>
+                                    <button type="button" class="btn btn-primary more-info">More info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content3" class="container tab-pane fade"><br>
+                        <div class="row d-flex align-items-center text-center flex-column flex-md-row">
+                            <div class="col py-4 ps-0 ps-md-5">
+                                <img src="src/Imagenes/illustration-features-tab-1.svg" alt="ilustracion2"
+                                    class="img-fluid">
+                            </div>
+                            <div class="col py-4">
+                                <div class="info-contenido-features text-md-start ps-md-7">
+                                    <h3>Easy Sharing</h3>
+                                    <p>Optimize your bookmark however you like. Our simple drag-and-drop interface gives
+                                        you
+                                        complete control over hoy you manage your favourite sites.</p>
+                                    <button type="button" class="btn btn-primary more-info">More info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-            </div>
-
-            <!-- imagen -->
-            <div class="col order-1 order-md-5 ">
-                <img src="src/Imagenes/illustration-hero.svg" alt="illustration-hero" class="img-fluid">
-            </div>
+            </section>
         </div>
+        <section id="download" class="container pb-7 mb-7">
+            <div class="d-flex flex-column align-items-center">
+                <div class="container info text-center">
+                    <h2>Download the extention</h2>
+                    <p class="descripcion-download">We've got more browsers in the pipeline. Please do let us know if
+                        you've got
+                        a favourite you'd like us to priorize.</p>
+                </div>
+                <div class="row row-de-cartas d-flex flex-column flex-lg-row align-content-center">
+                    <div class="col mb-5">
+                        <div class="card text-center pt-6">
+                            <div class="card-image-top"><img src="src/Imagenes/logo-chrome.svg" alt=""></div>
+                            <div class="card-body">
+                                <h4 class="card-title">Add to Chrome</h4>
+                                <p class="card-text">Minimum version 62</p>
+                                <img src="src/Imagenes/bg-dots.svg" alt="logo chrome" class="img-fluid">
+                                <button type="button" class="btn btn-primary btn-install">Add & Install
+                                    Extention</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card text-center mt-md-6 pt-6">
+                            <div class="card-image-top"><img src="src/Imagenes/logo-firefox.svg" alt=""></div>
+                            <div class="card-body">
+                                <h4 class="card-title">Add to Firefox</h4>
+                                <p class="card-text">Minimum version 55</p>
+                                <img src="src/Imagenes/bg-dots.svg" alt="logo chrome" class="img-fluid">
+                                <button type="button" class="btn btn-primary btn-install">Add & Install
+                                    Extention</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card text-center mt-md-7 pt-6">
+                            <div class="card-image-top"><img src="src/Imagenes/logo-opera.svg" alt=""></div>
+                            <div class="card-body">
+                                <h4 class="card-title">Add to Opera</h4>
+                                <p class="card-text">Minimum version 46</p>
+                                <img src="src/Imagenes/bg-dots.svg" alt="logo chrome" class="img-fluid">
+                                <button type="button" class="btn btn-primary btn-install">Add & Install
+                                    Extention</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
 
-        <!-- features -->
-        <section id="features" class="row justify-content-center pb-7 mb-7">
+        </section>
+
+        <!-- FAQS -->
+        <section id="faqs" class="row justify-content-center mb-5">
             <div class="info text-center">
-                <h2>Features</h2>
-                <p class="descripcion-features">Our aim is to make it quick and easy for you to access your favourite
-                    webstites.Your bookmarks sync between your devices so you can acces on the go.</p>
-            </div>
+                <h2>Frequently Asked Questions</h2>
+                <p class="descripcion-faqs">Here are some of our FAQS. If you have any other questions you'd like
+                    answered
+                    please feel free to email us.</p>
 
-
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs justify-content-center flex-column text-center flex-sm-row border-0 mb-4"
-                role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active pb-3" data-bs-toggle="tab" href="#content1">Simple Bookmarking</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link pb-3" data-bs-toggle="tab" href="#content2">Speedy Searching</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link pb-3" data-bs-toggle="tab" href="#content3">Easy Sharing</a>
-                </li>
-            </ul>
-
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div id="content1" class="container tab-pane active "><br>
-                    <div class="row d-flex align-items-center text-center flex-column flex-md-row">
-                        <div class="col py-4">
-                            <img src="src/Imagenes/illustration-features-tab-1.svg" alt="ilustracion2"
-                                class="img-fluid">
+                <!-- acordeón -->
+                <div class="container text-center my-5">
+                    <!-- items -->
+                    <div class="accordion accordion-flush text-start" id="accordionFlushExample">
+                        <!-- item #1 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    What is Bookmark?
+                                </button>
+                            </h3>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry’s standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.
+                                        It has survived not only five centuries, but also the leap into electronic
+                                        typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                                        with
+                                        the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                        recently
+                                        with desktop publishing software like Aldus PageMaker including versions of
+                                        Lorem
+                                        Ipsum.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col py-4 ps-0 ps-md-7">
-                            <div class="info-contenido-features text-md-start  ">
-                                <h3>Bookmark in one click</h3>
-                                <p>Optimize your bookmark however you like. Our simple drag-and-drop interface gives
-                                    you
-                                    complete control over hoy you manage your favourite sites.</p>
-                                <button type="button" class="btn btn-primary more-info">More info</button>
+                        <!-- item #2 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    How can I request a new browser?
+                                </button>
+                            </h3>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry’s standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.
+                                        It has survived not only five centuries, but also the leap into electronic
+                                        typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                                        with
+                                        the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                        recently
+                                        with desktop publishing software like Aldus PageMaker including versions of
+                                        Lorem
+                                        Ipsum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item #3 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Is there a mobile app?
+                                </button>
+                            </h3>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry’s standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.
+                                        It has survived not only five centuries, but also the leap into electronic
+                                        typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                                        with
+                                        the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                        recently
+                                        with desktop publishing software like Aldus PageMaker including versions of
+                                        Lorem
+                                        Ipsum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item #4 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    What about other Chromium browsers?
+                                </button>
+                            </h3>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry’s standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.
+                                        It has survived not only five centuries, but also the leap into electronic
+                                        typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                                        with
+                                        the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                        recently
+                                        with desktop publishing software like Aldus PageMaker including versions of
+                                        Lorem
+                                        Ipsum.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="content2" class="container tab-pane fade"><br>
-                    <div class="row d-flex align-items-center text-center flex-column flex-md-row">
-                        <div class="col py-4 ps-0 ps-md-5">
-                            <img src="src/Imagenes/illustration-features-tab-1.svg" alt="ilustracion2"
-                                class="img-fluid">
-                        </div>
-                        <div class="col py-4">
-                            <div class="info-contenido-features text-md-start ps-md-7">
-                                <h3>Speedy Searching</h3>
-                                <p>Optimize your bookmark however you like. Our simple drag-and-drop interface gives
-                                    you
-                                    complete control over hoy you manage your favourite sites.</p>
-                                <button type="button" class="btn btn-primary more-info">More info</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="content3" class="container tab-pane fade"><br>
-                    <div class="row d-flex align-items-center text-center flex-column flex-md-row">
-                        <div class="col py-4 ps-0 ps-md-5">
-                            <img src="src/Imagenes/illustration-features-tab-1.svg" alt="ilustracion2"
-                                class="img-fluid">
-                        </div>
-                        <div class="col py-4">
-                            <div class="info-contenido-features text-md-start ps-md-7">
-                                <h3>Easy Sharing</h3>
-                                <p>Optimize your bookmark however you like. Our simple drag-and-drop interface gives
-                                    you
-                                    complete control over hoy you manage your favourite sites.</p>
-                                <button type="button" class="btn btn-primary more-info">More info</button>
-                            </div>
-                        </div>
-                    </div>
+                    <button type="button" class="btn btn-primary">More info</button>
                 </div>
             </div>
         </section>
+
     </div>
-    <section id="download" class="row justify-content-center pb-7 mb-7">
 
-        <div class="info text-center">
-            <h2>Download the extention</h2>
-            <p class="descripcion-download">We've got more browsers in the pipeline. Please do let us know if you've got
-                a favourite you'd like us to priorize.</p>
-        </div>
-        <div class="row row-de-cartas flex-column flex-lg-row">
-            <div class="col mb-5">
-                <div class="card text-center pt-6">
-                    <div class="card-image-top"><img src="src/Imagenes/logo-chrome.svg" alt=""></div>
-                    <div class="card-body">
-                        <h4 class="card-title">Add to Chrome</h4>
-                        <p class="card-text">Minimum version 62</p>
-                        <img src="src/Imagenes/bg-dots.svg" alt="logo chrome" class="img-fluid">
-                        <button type="button" class="btn btn-primary btn-install">Add & Install Extention</button>
+    <footer class="">
+        <!-- parte1-footer -->
+        <div class="bg-primary pb-5">
+            <div class="text-center">
+                <div class="container texto-footer pt-6 pb-4">
+                    <div class="row">
+                        <p class="text-light py-2">35.000· ALREADY JOINED</p>
+                    </div>
+                    <div class="row">
+                        <h3 class="text-light titulo-footer">Stay up-to-date with that we're doing</h3>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card text-center mt-md-6 pt-6">
-                    <div class="card-image-top"><img src="src/Imagenes/logo-firefox.svg" alt=""></div>
-                    <div class="card-body">
-                        <h4 class="card-title">Add to Firefox</h4>
-                        <p class="card-text">Minimum version 55</p>
-                        <img src="src/Imagenes/bg-dots.svg" alt="logo chrome" class="img-fluid">
-                        <button type="button" class="btn btn-primary btn-install">Add & Install Extention</button>
+
+                <!-- form -->
+                <form novalidate class="flex-column flex-sm-row needs-validation">
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-auto position-relative">
+                            <input type="email" id="inputemail" class="form-control" aria-describedby="emailInline"
+                                placeholder="Enter your email adress" required>
+                            <div class="valid-tooltip">
+                               Email aceptado :)
+                            </div>
+                            <div class="invalid-tooltip">
+                                Es necesario introducir un correo electrónico :/
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-secondary button-secondary">Contact Us</button>
+                        </div>
+                        
                     </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card text-center mt-md-7 pt-6">
-                    <div class="card-image-top"><img src="src/Imagenes/logo-opera.svg" alt=""></div>
-                    <div class="card-body">
-                        <h4 class="card-title">Add to Opera</h4>
-                        <p class="card-text">Minimum version 46</p>
-                        <img src="src/Imagenes/bg-dots.svg" alt="logo chrome" class="img-fluid">
-                        <button type="button" class="btn btn-primary btn-install">Add & Install Extention</button>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
-    </section>
+        <!-- parte2-footer -->
+        <nav class="navbar navbar-expand-lg bg-dark px-lg-7">
+            <div class="container d-flex flex-column flex-lg-row">
+                <div class="navbar-collapse align-items-center text-center">
+                    <a class="navbar-brand" href="#" title="logo"><img src="src/Imagenes/logo-bookmark-white.svg" alt="" ></a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-light d-flex justify-content-md-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" aria-current="page" href="#">FEATURES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">PRICING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                    <div class="redes d-flex-inline">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-end flex-row justify-content-center">
+                            <li class="nav-item p-2 p-lg-1">
+                                <a class="nav-link" href="#">
+                                    <img src="src/Imagenes/icon-facebook.svg"
+                                        alt="logo-facebook">
+                                </a>
+                            </li>
+                            <li class="nav-item p-2 p-lg-1">
+                                <a class="nav-link" href="#">
+                                    <img src="src/Imagenes/icon-twitter.svg"
+                                        alt="logo-twitter">
+                                </a>
+                            </li>
+                        </ul>
 
-    <!-- FAQS -->
-    <section id="faqs" class="row justify-content-center pb-7 mb-7">
-        <div class="info text-center">
-            <h2>Frequently Asked Questions</h2>
-            <p class="descripcion-faqs">Here are some of our FAQS. If you have any other questions you'd like answered
-                please feel free to email us.</p>
-
-            <!-- acordeón -->
-            <div class="container text-center my-5">
-                <!-- items -->
-                <div class="accordion accordion-flush text-start" id="accordionFlushExample">
-                    <!-- item #1 -->
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                What is Bookmark?
-                            </button>
-                        </h3>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry’s standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
-                                    Ipsum.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item #2 -->
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
-                                How can I request a new browser?
-                            </button>
-                        </h3>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry’s standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
-                                    Ipsum.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item #3 -->
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                aria-controls="flush-collapseThree">
-                                Is there a mobile app?
-                            </button>
-                        </h3>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry’s standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
-                                    Ipsum.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item #4 -->
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="flush-headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                aria-controls="flush-collapseFour">
-                                What about other Chromium browsers?
-                            </button>
-                        </h3>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry’s standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
-                                    Ipsum.</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-primary">More info</button>
             </div>
-        </div>
-    </section>
-
-    
+        </nav>
+    </footer>
 
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        //validación de form
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
 </body>
 
 </html>
