@@ -54,7 +54,9 @@ $input-color: $font-secondary-color;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-
+body{
+    overflow-x:hidden;
+}
 p{
     color: $font-secondary-color;
 }
@@ -206,7 +208,9 @@ button.accordion-button{
         width: 90%;
     }
     
-
+    button.contact{
+        align-content: stretch;
+    }
 }
 
 

@@ -12638,6 +12638,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
 p {
   color: rgb(167, 166, 166);
 }
@@ -12774,6 +12778,9 @@ button.accordion-button {
   }
   .texto-footer {
     width: 90%;
+  }
+  button.contact {
+    align-content: stretch;
   }
 }
 .nav-link:hover, .nav-link:focus {
