@@ -12732,6 +12732,10 @@ button.accordion-button {
   width: 25%;
 }
 
+.nav-footer {
+  color: rgb(236, 241, 245);
+}
+
 @media (max-width: 767.98px) {
   .azulito {
     width: 90%;
@@ -12771,6 +12775,40 @@ button.accordion-button {
   .texto-footer {
     width: 90%;
   }
+}
+.nav-link:hover, .nav-link:focus {
+  color: #FA5959;
+}
+
+button.btn-primary:hover {
+  background-color: white;
+  color: #5265E1;
+}
+
+button.btn-secondary:hover {
+  background-color: white;
+  color: #FA5959;
+}
+
+button.btn-light:hover {
+  background-color: white;
+  color: #3a4066;
+}
+
+.accordion-button:hover {
+  color: #FA5959;
+}
+
+.accordion-button:hover {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=style.css.map */

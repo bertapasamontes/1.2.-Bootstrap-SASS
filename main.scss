@@ -168,6 +168,9 @@ button.accordion-button{
 .texto-footer{
     width: 25%;
 }
+.nav-footer{
+    color: $light;
+}
 
 @include media-breakpoint-down(md){
     .azulito{
@@ -218,5 +221,36 @@ button.accordion-button{
     .texto-footer{
         width: 90%;
     }
+    
 
+}
+
+
+//hover
+.nav-link:hover, .nav-link:focus{
+    color: $secondary;
+}
+button.btn-primary:hover{
+    background-color: white;
+    color: $primary;
+}
+button.btn-secondary:hover{
+    background-color: white;
+    color: $secondary;
+}
+button.btn-light:hover{
+    background-color: white;
+    color: $dark;
+}
+.accordion-button:hover{
+    color: $secondary;
+}
+.accordion-button:hover{
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed){
+    background-color: transparent;
+}
+.accordion-button:focus{
+    box-shadow: none;
 }

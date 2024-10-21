@@ -10,7 +10,7 @@
 
 <body class="">
     <div class="mx-4">
-        <nav class="navbar navbar-expand-lg py-5 mx-sm-4 px-sm-4">
+        <nav class="navbar navbar-expand-lg pt-5 pb-2 px-sm-6 fixed-top bg-white">
             <div class="container-fluid mx-sm-6 px-sm-4">
                 <!-- logo -->
                 <a class="navbar-brand" href="#"><img src="src/Imagenes/logo-bookmark.svg" alt="logo" title="logo"></a>
@@ -43,10 +43,10 @@
         </nav>
 
         <!-- grid de bootstrap -->
-        <div class="container">
+        <div class="container pt-6">
 
             <!-- hero -->
-            <div class="row py-5 my-5 flex-column flex-md-row">
+            <div class="row py-6 my-6 flex-column flex-md-row">
                 <!-- info -->
                 <div class="col order-5 order-md-1 ">
                     <div class="my-5 mx-lg-5 text-center text-md-start ">
@@ -353,7 +353,7 @@
                                Email aceptado :)
                             </div>
                             <div class="invalid-tooltip">
-                                Es necesario introducir un correo electrónico :/
+                               Whoops, make sure it's an email
                             </div>
                         </div>
                         <div class="col-auto">
@@ -371,13 +371,13 @@
                     <a class="navbar-brand" href="#" title="logo"><img src="src/Imagenes/logo-bookmark-white.svg" alt="" ></a>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-light d-flex justify-content-md-center">
                         <li class="nav-item">
-                            <a class="nav-link text-light" aria-current="page" href="#">FEATURES</a>
+                            <a class="nav-link nav-footer" aria-current="page" href="#">FEATURES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">PRICING</a>
+                            <a class="nav-link  nav-footer" href="#">PRICING</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">CONTACT</a>
+                            <a class="nav-link nav-footer" href="#">CONTACT</a>
                         </li>
                     </ul>
                     <div class="redes d-flex-inline">
@@ -385,13 +385,13 @@
                             <li class="nav-item p-2 p-lg-1">
                                 <a class="nav-link" href="#">
                                     <img src="src/Imagenes/icon-facebook.svg"
-                                        alt="logo-facebook">
+                                        alt="logo-facebook" id="logo-facebook" onmouseover="this.src='src/Imagenes/icon-facebook-red.svg';" onmouseout="this.src='src/Imagenes/icon-facebook.svg';">
                                 </a>
                             </li>
                             <li class="nav-item p-2 p-lg-1">
                                 <a class="nav-link" href="#">
                                     <img src="src/Imagenes/icon-twitter.svg"
-                                        alt="logo-twitter">
+                                        alt="logo-twitter" onmouseover="this.src='src/Imagenes/icon-twitter-red.svg';" onmouseout="this.src='src/Imagenes/icon-twitter.svg';">
                                 </a>
                             </li>
                         </ul>
@@ -404,7 +404,7 @@
 
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="js/main.js"></script>
     <script>
         //validación de form
         (() => {
