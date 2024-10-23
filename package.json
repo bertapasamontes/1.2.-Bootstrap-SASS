@@ -1,4 +1,14 @@
 {
+  "name": "1.2.bootstrap-sass",
+  "version": "1.0.0",
+  "description": "📄Descripció - Enunciat de l'exercici",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "dependencies": {
     "bootstrap": "^5.3.3"
   }
