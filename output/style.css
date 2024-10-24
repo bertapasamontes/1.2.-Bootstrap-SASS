@@ -12638,10 +12638,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  overflow-x: hidden;
-}
-
 p {
   color: rgb(167, 166, 166);
 }
@@ -12740,7 +12736,19 @@ button.accordion-button {
   color: rgb(236, 241, 245);
 }
 
+.form-control {
+  padding-right: 3rem;
+}
+
+.was-validated .form-control:invalid,
+.was-validated .form-control:valid {
+  padding-right: 3rem;
+}
+
 @media (max-width: 767.98px) {
+  body {
+    overflow-x: hidden;
+  }
   .azulito {
     width: 90%;
     height: 75%;

@@ -49,14 +49,15 @@ $border-color:#dee2e6;
 
 //forms
 $input-padding-y:0.75rem;
+// $input-padding-x:2rem;
 $input-font-size: $btn-font-size;
 $input-color: $font-secondary-color;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-body{
-    overflow-x:hidden;
-}
+// body{
+//     overflow-x:hidden;
+// }
 p{
     color: $font-secondary-color;
 }
@@ -158,7 +159,18 @@ button.accordion-button{
     color: $light;
 }
 
+.form-control{
+    padding-right: 3rem; 
+}
+.was-validated .form-control:invalid,
+.was-validated .form-control:valid {
+  padding-right: 3rem;
+}
+
 @include media-breakpoint-down(md){
+    body{
+        overflow-x:hidden;
+    }
     .azulito{
         width: 90%;
         height: 75%;
